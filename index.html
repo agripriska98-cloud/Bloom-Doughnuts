@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Doughnuts - Soft & Premium Artisanal Donuts 🍩✨</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS (File Terpisah) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                🍩 Bloom Doughnuts 🌸
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu Donat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cara-pesan">Cara Pesan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi & Kontak</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-bloom-primary text-white text-decoration-none" href="#menu">
+                            🛒 Pesan Sekarang
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <span class="badge badge-soft-pink mb-3">✨ Freshly Baked Everyday 🍩</span>
+                    <h1 class="display-4 fw-bold mb-3">Kelembutan Donat Premium di Setiap Gigitan! 💕</h1>
+                    <p class="lead text-muted mb-4">Dibuat dari bahan-bahan pilihan berkualitas tinggi, topping melimpah, dan rasa manis yang pas untuk menceriakan harimu.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#menu" class="btn btn-bloom-primary btn-lg">🍓 Lihat Menu</a>
+                        <a href="#lokasi" class="btn btn-bloom-blue btn-lg">📍 Cek Lokasi Toko</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+            <img src="cover.jpg" class="img-fluid rounded-4 shadow-lg w-100" alt="Bloom Doughnuts" style="height: 380px; object-fit: cover; object-position: center;">
+        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG MENU (10 MENU) -->
+    <section id="menu" class="py-5">
+        <div class="container py-4">
+            <div class="text-center">
+                <h2 class="section-title fw-bold">🍩 10 Menu Spesial Bloom 🧁</h2>
+                <p class="text-muted">Pilih donat favoritmu dan pesan langsung otomatis ke WhatsApp!</p>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <!-- Menu 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu1.jpg" alt="Nutella Almond Crunch">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍫 Nutella Almond Crunch</h5>
+                                <span class="price-tag">Rp 36.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Glaze Nutella melimpah dengan taburan renyah kacang almond panggang</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Strawberry Glaze Cream', 12000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu2.jpg" alt="Salted Caramel Macchiato">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍮Salted Caramel Macchiato</h5>
+                                <span class="price-tag">Rp 26.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Perpaduan karamel gurih-manis dengan sentuhan aroma kopi espresso</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Mango Custard Chunk', 12000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                             <img src="menu3.jpg" alt="Matcha Pistachio Delight">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍵 Matcha Pistachio Delight</h5>
+                                <span class="price-tag">Rp 36.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Glaze matcha autentik Jepang bertabur potongan kacang pistachio renyah</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Choco Hazelnut Cocoa', 13000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu4.jpg" alt="Classic Velvet Tiramisu"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">☕ Classic Velvet Tiramisu</h5>
+                                <span class="price-tag">Rp 23.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Isian krim tiramisu lembut dengan taburan bubuk kakao manis</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Strawberry Whipped Dream', 14000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu5.jpg" alt="Choco Lava Melt"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍫 Choco Lava Melt</h5>
+                                <span class="price-tag">Rp 25.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Donat cokelat dengan isian cokelat pekat yang meleleh saat digigit</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Tropical Mango Powder', 11000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                             <img src="menu6.jpg" alt="Lotus Biscoff Speculoos">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍪 Lotus Biscoff Speculoos</h5>
+                                <span class="price-tag">Rp 30.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Olesan selai Biscoff yang legit dengan biskuit Lotus kayu manis</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Matcha Green Tea Bliss', 13000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 7 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu7.jpg" alt="Strawberry Shortcake Cream"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍓 Strawberry Shortcake Cream</h5>
+                                <span class="price-tag">Rp 28.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Krim wangi, selai stroberi segar, dan taburan remahan biskuit renyah</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Tiramisu Velvet Cream', 14000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 8 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                            <img src="menu8.jpg" alt="Pandan Coconut Srikaya"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🥥 Pandan Coconut Srikaya</h5>
+                                <span class="price-tag">Rp 20.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Aroma pandan wangi dengan isian selai srikaya & kelapa parut sangrai</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Blueberry Cream Cheese', 14000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 9 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column">
+                        <div class="product-img-wrapper">
+                             <img src="menu9.jpg" alt="Vanilla Bean Custard"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">🍦 Vanilla Bean Custard</h5>
+                                <span class="price-tag">Rp 19.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Isian vla vanila lembut dengan rasa manis yang pas dan menenangkan</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-primary w-100" onclick="orderItem('Classic Snow Sugar', 9000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 10 (Box Package) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card d-flex flex-column border border-2 border-warning">
+                        <div class="product-img-wrapper">
+                             <img src="menu10.jpg" alt="Red Velvet Cheese Blast"> 
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0 text-dark">Red Velvet Cheese Blast 🔴</h5>
+                                <span class="price-tag bg-warning text-dark">Rp 34.000</span>
+                            </div>
+                            <p class="text-muted small mb-4">Taburan biskuit red velvet renyah dengan isian krim keju yang gurih</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-bloom-blue w-100" onclick="orderItem('Box Special Mix (Isi 5)', 58000)">
+                                    🍩 Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PEMESANAN -->
+    <section id="cara-pesan" class="py-5" style="background-color: var(--cream-soft);">
+        <div class="container py-3">
+            <div class="text-center">
+                <h2 class="section-title fw-bold">📲 Cara Pemesanan via WhatsApp</h2>
+                <p class="text-muted">Hanya butuh beberapa detik sampai pesananmu langsung diproses!</p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-12 col-md-3 text-center">
+                    <div class="step-card h-100">
+                        <span class="step-emoji">🍩</span>
+                        <h5 class="fw-bold mb-2">1. Pilih Menu</h5>
+                        <p class="text-muted small mb-0">Pilih varian donat favoritmu di katalog menu di atas.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <div class="step-card h-100">
+                        <span class="step-emoji">💬</span>
+                        <h5 class="fw-bold mb-2">2. Klik Pesan</h5>
+                        <p class="text-muted small mb-0">Klik tombol "Pesan via WA", sistem akan membuatkan format pesan otomatis.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <div class="step-card h-100">
+                        <span class="step-emoji">📲</span>
+                        <h5 class="fw-bold mb-2">3. Kirim Pesan</h5>
+                        <p class="text-muted small mb-0">Kirim teks otomatis yang terisi di aplikasi WhatsApp kamu ke admin kami.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <div class="step-card h-100">
+                        <span class="step-emoji">🛵</span>
+                        <h5 class="fw-bold mb-2">4. Antar / Ambil</h5>
+                        <p class="text-muted small mb-0">Konfirmasi pembayaran & pesanan siap diantar atau diambil di toko!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOKASI TOKO & INFORMASI KONTAK -->
+    <section id="lokasi" class="py-5">
+        <div class="container py-3">
+            <div class="text-center">
+                <h2 class="section-title fw-bold">📍 Lokasi Toko & Kontak</h2>
+                <p class="text-muted">Kunjungi outlet kami atau hubungi kami untuk informasi & pemesanan besar</p>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <!-- Kontak & Informasi -->
+                <div class="col-lg-5">
+                    <div class="info-box h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="fw-bold mb-4" style="color: var(--brown-dark);">🏪 Informasi Outlet</h4>
+                            
+                            <!-- Alamat -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-item-icon">📍</div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Alamat Outlet</h6>
+                                    <p class="text-muted small mb-0">Jl. Mawar Indah No. 45, Kecamatan Sukajadi, Kota Bandung, Jawa Barat (Dekat Taman Kota)</p>
+                                </div>
+                            </div>
+
+                            <!-- Jam Buka -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-item-icon">⏰</div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Jam Operasional</h6>
+                                    <p class="text-muted small mb-0">Senin - Minggu: 08.00 - 20.00 WIB<br><span class="text-success font-monospace">(Setiap Hari Buka)</span></p>
+                                </div>
+                            </div>
+
+                            <!-- Kontak WhatsApp -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-item-icon">💬</div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">WhatsApp CS / Admin</h6>
+                                    <p class="text-muted small mb-0">083898277892 (Layanan Fast Response)</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Media -->
+                            <div class="d-flex align-items-start">
+                                <div class="contact-item-icon">📸</div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Media Sosial</h6>
+                                    <p class="text-muted small mb-0">Instagram & TikTok: <strong>@bloomdoughnuts</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Bloom%20Doughnuts,%20saya%20ingin%20bertanya%20mengenai%20produk/pesanan" target="_blank" class="btn btn-bloom-primary w-100">
+                                💬 Hubungi CS via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peta Google Maps Embed -->
+                <div class="col-lg-7">
+                    <div class="info-box h-100 p-2">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.27218602693!2d107.57311654877713!3d-6.903444341687889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a941619e2723f!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 380px; border-radius: 16px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="fw-bold mb-1" style="color: var(--brown-dark);">🍩 Bloom Doughnuts 🌸</p>
+            <p class="text-muted small mb-0">&copy; 2026 Bloom Doughnuts. All Rights Reserved. Freshly Baked with Love ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS (File Terpisah) -->
+    <script src="script.js"></script>
+</body>
+</html>
